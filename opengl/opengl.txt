@@ -1,0 +1,7 @@
+glew 出现imp错误时可以添加 <GL/glut.h>尝试解决
+glew32s 静态链接库
+glew32  动态链接库
+opengl分为静态库和动态库，调试之前选好链接库的版本
+
+因此如果没有gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)这一步，OpenGL那些内置的函数（gl开头的）是找不到的。
+访问的时候可能提示0x000000000错误。(颜色数据出现问题)

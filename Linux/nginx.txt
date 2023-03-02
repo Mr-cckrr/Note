@@ -1,0 +1,1 @@
+nginx.conf http中的 server的 root配置修改为html文件所在的文件夹

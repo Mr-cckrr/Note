@@ -1,0 +1,4 @@
+tail 查看文件内容
+find 搜索文件命令
+tail -100 /var/log/nginx/error.log nginx错误日志
+whereis 程序名 查找程序安装位置

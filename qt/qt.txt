@@ -1,0 +1,12 @@
+qt环境配置：
+mingw安装
+qt维护程序中安装msvc和mingw版本的运行库
+qt编辑器检查有没有Manual的C++和C的版本，没有手动添加mingw路径  路径在bin/gcc.exe中
+再添加qt维护器中的mingw路径 在QT Versions中 路径为 /bin/qmake
+如果无法编译 尝试更新windows的SDK
+安装只选择Debugging Tools for Windows就行
+
+SIGNAL 发射信号
+SLOT     接受信号
+public slots: 槽函数定义区，在信号接收后启用
+QMessageBox 消息对话框

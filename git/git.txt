@@ -1,0 +1,35 @@
+git add 添加
+
+git commit -m"注释" 提交								+++++++++++++++
+
+git log 提交历史
+										https://github.com/Mr-cckrr/twi
+git reset --hard HEAD^ 回退版本 （HEAD为最新版本位置）					git地址位置		
+										++++++++++++++++			
+git reset --hard 历史记录（在log 里找，只需前几位就行）回退到指定版本
+
+git status 查看仓库修改状态								开启远程仓库推送可能需要ssh认证
+
+git diff 文件名（比较不同，查看修改）
+
+git reflog 使用命令历史记录
+
+git checkout 撤销修改 在使用 git add之前(命令作用：使用版本库的文件替换工作区文件)
+
+在使用 git add 之后 文件在暂存区域
+①git reset HEAD<文件名>
+②git checkout
+
+ssh-keygen -t rsa –C “邮件名称” 设置ssh链接 生成is_rsa.pub(公共密钥)复制内容到github ssh里
+
+git remote add origin(远程仓库名) git@github.com:<github账户名>/仓库链接（直接加链接也行）
+git push -u origin master 向远程仓库 origin 推送master分支里所有内容（-f 强制推送）
+git remote -v 查看远程仓库
+
+git remote rm <远程仓库名>解除github远程仓库
+git pull origin master(远程仓库名) 将远程仓库内容拉回本地master
+
+git config --global http.sslVerify "false"（解除第三方ssh认证）
+git config --global user.name 指定本地仓库用户名
+git config --global user.email  指定本地仓库邮件名
+git checkout -b 创建分支
